@@ -1,0 +1,271 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* vertical-align: baseline; */
+  font-size: 16px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.desktop a:hover {
+  color: white;
+  background-color: #a84d02;
+}
+
+.products a:hover {
+  background-color: black;
+}
+
+.container-nav {
+  display: flex;
+  border-bottom: 1px solid #a84d02;
+  align-items: center;
+  height: 4rem;
+}
+
+a,
+li {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style: none;
+}
+
+.desktop ul {
+  display: flex;
+  font-family: "Edu QLD Beginner", cursive;
+}
+
+.desktop li {
+  padding: 0 2.55rem;
+}
+
+.desktop li a {
+  background-color: #1392a8;
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+}
+
+.mobile {
+  width: 100%;
+}
+
+.mobile ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile li {
+  padding-left: 1.2rem;
+}
+
+.mobile li img {
+  height: 2rem;
+}
+
+.logo {
+  flex: 1;
+  padding-left: 1.04rem;
+  align-self: center;
+  font-family: "Edu QLD Beginner", cursive;
+}
+
+.mobile img {
+  height: 4rem;
+}
+
+.logo a {
+  padding: 0.5rem;
+  background-color: #1392a8;
+  border-radius: 1.2rem;
+}
+
+@media only screen and (min-width: 760px) {
+  .mobile {
+    display: none;
+  }
+  .mobile .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+  .desktop .logo {
+    display: none;
+  }
+}
+
+/* Main content */
+
+/* First Part */
+
+.main {
+  margin: 0;
+}
+
+.main-image {
+  display: flex;
+  background-image: url("../resources/images/coffee-beans-with-props-making-coffee_1220-4526.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 49rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.slogan h2 {
+  position: relative;
+  top: 290px;
+  color: white;
+  font-family: "Edu QLD Beginner", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Second Part */
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 7rem;
+  padding-bottom: 1.5rem;
+  font-family: "Edu QLD Beginner", cursive;
+  font-weight: bold;
+  color: black;
+}
+
+#best-products {
+  display: flex;
+  padding: 1.25rem 5%;
+  justify-content: space-between;
+  background-color: #e6e5e5;
+  height: auto;
+  width: auto;
+  /* margin-bottom: 1.25rem; */
+}
+
+.products {
+  flex: 1;
+  padding: 2rem;
+  margin: 4.2rem 0.8rem 0.6rem 0.8rem;
+  background-color: white;
+  /* width: 50%; */
+  min-width: 8rem;
+}
+
+.center {
+  text-align: center;
+  /* min-width: 8.95rem; */
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.content {
+  font-family: "Oswald", sans-serif;
+}
+
+.content h3 {
+  line-height: 1.9;
+}
+
+@media only screen and (max-width: 1024px) {
+  #best-products {
+    flex-direction: column;
+  }
+}
+
+/* About */
+
+.about {
+  /* background-image: url("../images/about.webp"); */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  /* padding: 1.25rem; */
+}
+
+.article {
+  display: flex;
+}
+
+.about .image-container {
+  width: 50%;
+}
+
+.about .image-container img {
+  max-width: 80%;
+  float: left;
+  padding: 1.2rem;
+}
+
+.about .content {
+  width: 94%;
+  font-family: "Lobster", cursive;
+}
+
+.about .content h3 {
+  line-height: 3;
+  text-align: center;
+}
+
+.title2 {
+  text-align: center;
+  font-family: "Edu QLD Beginner", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #a84d02;
+}
+
+@media only screen and (max-width: 1024px) {
+  .article {
+    flex-direction: column;
+  }
+  .about .image-container {
+    position: relative;
+    left: 5%;
+    width: 100%;
+    text-align: center;
+  }
+  .about .content h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 180px) {
+  .about .image-container {
+    min-width: 20rem;
+  }
+}
+
+/* footer */
+
+footer {
+  display: grid;
+  background-color: #a84d02;
+  color: white;
+  font-family: "Edu QLD Beginner", cursive;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-areas: "contact contact2";
+}
